@@ -15,6 +15,12 @@ class script(object):
 <b>DEVS:</b>
 - 𝙳𝚎𝚟 1<a href=https://t.me/mr_MKN>𝙼𝚛.𝙼𝙺𝙽 𝚃𝙶</a>
 - 𝙳𝚎𝚟 2<a href=https://t.me/AboutAadhi>𝙰𝙰𝙳𝙷𝙸</a>"""
+    
+    PRIVATEBOT_TXT = """<b>𝐇𝐄𝐘 {} 𝐀𝐌 𝐒𝐓𝐈𝐋𝐋 𝐁𝐑𝐄𝐀𝐓𝐇𝐈𝐍𝐆 ❗❕</b>
+<b>›› 𝐼ᴛ𝓈 𝐸ᴀ𝓈ʏ 𝒯ᴏ 𝒰𝓈ᴇ 𝑀ᴇ 𝐹ᴏʟʟᴏᴡ 𝒯ʜᴇ𝓈ᴇ 𝒮ᴛᴇᴘ𝓈</b>
+<b>›› ᴄʀᴇᴀᴛᴇ ᴀ ɢʀᴏᴜᴘ</b>
+<b>›› ᴀᴅᴅ ᴍᴇ ᴛʜᴇʀᴇ ᴀꜱ ᴀᴅᴍɪɴ</b>
+<b>›› ᴅᴏɴᴇ😊"""    
 
     FILE_TXT = """➤ 𝐇𝐞𝐥𝐩: 𝐅𝐢𝐥𝐞 𝐒𝐭𝐨𝐫𝐞 𝐌𝐨𝐝𝐮𝐥𝐞../
 
@@ -28,9 +34,7 @@ class script(object):
 
 ⪼ 𝐄𝐱𝐚𝐦𝐩𝐥𝐞 ›
 
-<code>/batch https://t.me/mkn_bots_updates https://t.me/mkn_bots_updates</code>
-
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 ›› <a href=https://t.me/mkn_bots_updates><b>𝙼𝙺𝙽 𝙱𝙾𝚃𝚉</b></a>"""
+<code>/batch https://t.me/rebekahbot1/3 https://t.me/rebekahbot1/7</code>"""
     
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
@@ -76,7 +80,7 @@ class script(object):
 ›› /set_template - 𝚂𝙴𝚃 𝙲𝚄𝚂𝚃𝙾𝙼 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙵𝙾𝚁 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁. 
 ›› /get_template - 𝙶𝙴𝚃 𝙲𝚄𝚁𝚁𝙴𝙽𝚃 𝙸𝙼𝙳𝙱 𝚃𝙴𝙼𝙿𝙻𝙰𝚃𝙴 𝙾𝙵 𝙰𝚄𝚃𝙾 𝙵𝙸𝙻𝚃𝙴𝚁.
 
-𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/mr_MKN>Mr.MKN TG</a>**"""
+𝙲𝚁𝙴𝙳𝙸𝚃𝚂 :- <a href=https://t.me/HELL_GaM>คkคŞh</a>**"""
 
     CONNECTION_TXT = """Help: <b>Connections</b>
 
@@ -185,7 +189,7 @@ By @{} """
 
 ➪ 𝖩𝗎𝗌𝗍 𝗌𝖾𝗇𝖽 𝗆𝖾 𝖺 𝗂𝗆𝖺𝗀𝖾 𝗍𝗈 𝖾𝖽𝗂𝗍 ✨
 
-𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/mr_MKN>Mr.MKN TG</a>"""
+𝖬𝖺𝖽𝖾 𝖻𝗒 <a href=https://t.me/HELL_GaM>คkคŞh</a>"""
 
     RESTRIC_TXT = """➤ 𝐇𝐞𝐥𝐩: Mᴜᴛᴇ 🚫
 
