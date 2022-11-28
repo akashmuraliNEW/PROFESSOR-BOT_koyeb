@@ -268,8 +268,8 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('This Movie Not Found In DataBase')
-            await asyncio.sleep(10)
+            k = await query.message.edit('⭕Given Movie/Series is not found in bot!⭕\n☞ 🎭 REASONS 👇\n☞ Incorrect spelling. try again with correct spelling\n☞ No special characters or symbols\n☞ Movie not released\n☞ NO cam prints\n☞ HD files mathreme bot ill upload chyu vro\n☞ contact admin if its an old movie to add in bot @HELL_GaM💌')
+            await asyncio.sleep(30)
             await k.delete()
 
 
@@ -288,8 +288,8 @@ async def pm_spoll_tester(bot, query):
         k = (movie, files, offset, total_results)
         await pm_AutoFilter(bot, query, k)
     else:
-        k = await query.message.edit('This Movie Not Found In DataBase')
-        await asyncio.sleep(10)
+        k = await query.message.edit('⭕Given Movie/Series is not found in bot!⭕\n☞ 🎭 REASONS 👇\n☞ Incorrect spelling. try again with correct spelling\n☞ No special characters or symbols\n☞ Movie not released\n☞ NO cam prints\n☞ HD files mathreme bot ill upload chyu vro\n☞ contact admin if its an old movie to add in bot @HELL_GaM💌')
+        await asyncio.sleep(30)
         await k.delete()
 
 
@@ -534,6 +534,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
             f_caption = f_caption
         if f_caption is None:
             f_caption = f"{files.file_name}"
+        buttons = [
+            [
+            InlineKeyboardButton('🤖𓂀ℍ𝕆𝕎 𝕋𝕆 𝔻𝕆𝕎ℕ𝕃𝕆𝔸𝔻?𓂀🤖', url=f'https://t.me/rebekahbot1/3')
+            ]
+            ]    
 
         try:
             if AUTH_CHANNEL and not await is_subscribed(client, query):
@@ -577,6 +582,11 @@ async def cb_handler(client: Client, query: CallbackQuery):
                 f_caption = f_caption
         if f_caption is None:
             f_caption = f"{title}"
+        buttons = [
+            [
+            InlineKeyboardButton('🤖𓂀ℍ𝕆𝕎 𝕋𝕆 𝔻𝕆𝕎ℕ𝕃𝕆𝔸𝔻𓂀🤖', url=f'https://t.me/rebekahbot1/3')
+            ]
+            ]    
         await query.answer()
         await client.send_cached_media(
             chat_id=query.from_user.id,
@@ -823,14 +833,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
     elif query.data == "start":                        
         buttons = [[
             InlineKeyboardButton("➕️ 𝙰𝙳𝙳 𝙼𝙴 𝚃𝙾 𝚈𝙾𝚄𝚁 𝙶𝚁𝙾𝚄𝙿 ➕️", url=f"http://t.me/{temp.U_NAME}?startgroup=true")
-            ],[
-            InlineKeyboardButton("🔍 𝚂𝙴𝙰𝚁𝙲𝙷 🔍", switch_inline_query_current_chat=''), 
-            InlineKeyboardButton("📢 𝚄𝙿𝙳𝙰𝚃𝙴𝚂 📢", url="https://t.me/mkn_bots_updates")
-            ],[
-            InlineKeyboardButton("🎥 ᴍᴏᴠɪᴇ ᴜᴘᴅᴀᴛᴇs", url="https://t.me/MR_LINK_Z")
             ],[      
-            InlineKeyboardButton("ℹ️ 𝙷𝙴𝙻𝙿 ℹ️", callback_data="help"),
-            InlineKeyboardButton("💫 𝙰𝙱𝙾𝚄𝚃 💫", callback_data="about")
+            InlineKeyboardButton("ℹ️ 𝐇𝐄𝐋𝐏 ℹ️", callback_data="help"),
+            ],[
+            InlineKeyboardButton('❈ 𝐎𝐖𝐍𝐄𝐑 ❈ ', url='https://t.me/HELL_GaM')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
@@ -909,7 +915,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('❣️ 𝚂𝙾𝚄𝚁𝙲𝙴 𝙲𝙾𝙳𝙴 ❣️', callback_data='source')
+            InlineKeyboardButton('❣️ 𝚂𝙾𝚄𝚁𝙲𝙴 ❣️', callback_data='source')
             ],[
             InlineKeyboardButton('🏠 𝙷𝙾𝙼𝙴 🏠', callback_data='start'),
             InlineKeyboardButton('🔐 𝙲𝙻𝙾𝚂𝙴 🔐', callback_data='close_data')
@@ -1110,7 +1116,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         if query.from_user.id in ADMINS:
             await query.message.edit_text(text=script.ADMIN_TXT, reply_markup=reply_markup, parse_mode=enums.ParseMode.HTML)
         else:
-            await query.answer("Your Not Authorizer ⚠️", show_alert=True)
+            await query.answer("You are Not Authorizer ⚠️", show_alert=True)
 
     elif query.data == "gfill":
         buttons = [[            
@@ -1473,7 +1479,7 @@ async def pm_spoll_choker(msg):
     gs_parsed = []
     if not g_s:
         k = await msg.reply("I couldn't find any movie in that name.")
-        await asyncio.sleep(8)
+        await asyncio.sleep(10)
         await k.delete()
         return
     regex = re.compile(r".*(imdb|wikipedia).*", re.IGNORECASE)  # look for imdb / wiki results
