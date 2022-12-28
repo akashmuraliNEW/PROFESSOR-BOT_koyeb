@@ -5,7 +5,6 @@ youtube_dl
 youtube_search_python
 youtube_search
 requests
-os
 requests
 aiohttp
 yt_dlp
