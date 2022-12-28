@@ -1,4 +1,8 @@
 git+https://github.com/MKN-BOTZ/pyrogram         
 tgcrypto
 git+https://github.com/Joelkb/cinemagoer
-ytdl
+youtube_dl
+youtube_search_python
+youtube_search
+requests
+ffmpeg-python
