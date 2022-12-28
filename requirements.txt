@@ -9,8 +9,6 @@ requests
 aiohttp
 yt_dlp
 asyncio
-math
-time
 wget
 aiofiles
 youtubesearchpython
