@@ -75,7 +75,7 @@ def song(client, message):
         for i in range(len(dur_arr)-1, -1, -1):
             dur += (int(dur_arr[i]) * secmul)
             secmul *= 60
-        message.reply_audio(audio_file, caption=rep, parse_mode='md',quote=False, title=title, duration=dur, performer=performer, reply_to_message_id=message.id, thumb=thumb_name)
+        message.reply_audio(audio_file, caption=rep, parse_mode=enums.ParseMode.HTML,quote=False, title=title, duration=dur, performer=performer, reply_to_message_id=message.id, thumb=thumb_name)
         m.delete()
     except Exception as e:
         m.edit("**🚫 𝙴𝚁𝚁𝙾𝚁 🚫**")
@@ -153,7 +153,7 @@ async def vsong(client, message: Message):
         thumb=sedlyf,
         caption=capy,
         supports_streaming=True,        
-        reply_to_message_id=message.message_id 
+        reply_to_message_id=message.id 
     )
     await pablo.delete()
     for files in (sedlyf, file_stark):
