@@ -10,4 +10,5 @@ aiohttp
 yt_dlp
 asyncio
 aiofiles
+ffmpeg-python
 
