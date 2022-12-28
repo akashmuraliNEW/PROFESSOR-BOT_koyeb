@@ -6,3 +6,12 @@ youtube_search_python
 youtube_search
 requests
 ffmpeg-python
+os
+requests
+aiohttp
+yt_dlp
+asyncio
+math
+time
+wget
+aiofiles
