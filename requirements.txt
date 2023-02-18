@@ -7,7 +7,7 @@ youtube_search
 requests
 requests
 aiohttp
-yt_dlp
+yt_dlp==2023.02.17
 asyncio
 aiofiles
 ffmpeg-python
